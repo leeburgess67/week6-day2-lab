@@ -27,8 +27,9 @@ public class Library {
         return capacity;
     }
 
-    public void removeBook(){
-        this.books.remove(0);
+    public Book removeBook(){
+        return this.books.remove(0);
+
     }
 }
 

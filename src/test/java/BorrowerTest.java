@@ -23,7 +23,8 @@ public class BorrowerTest {
 
     @Test
     public void canAddBookToCollection(){
-        borrower.addBook();
+        library.addBook(book);
+        borrower.takeBookFromLibrary(library);
         assertEquals(1, borrower.collectionCount());
     }
 }
