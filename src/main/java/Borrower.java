@@ -5,7 +5,11 @@ public class Borrower {
     ArrayList<Book> collection;
 
     public Borrower(){
-        this.collection = ArrayList<>();
+        this.collection = new ArrayList<>();
+    }
+
+    public int collectionCount() {
+        return this.collection.size();
     }
 }
 
