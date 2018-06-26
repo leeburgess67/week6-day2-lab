@@ -26,5 +26,9 @@ public class Library {
     public int capacityCheck() {
         return capacity;
     }
+
+    public void removeBook(){
+        this.books.remove(0);
+    }
 }
 
