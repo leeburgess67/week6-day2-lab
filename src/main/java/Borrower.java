@@ -4,7 +4,7 @@ public class Borrower {
 
     ArrayList<Book> collection;
 
-    public Borrower(){
+    public Borrower() {
         this.collection = new ArrayList<>();
     }
 
@@ -12,7 +12,7 @@ public class Borrower {
         return this.collection.size();
     }
 
-    public void takeBookFromLibrary(Library library){
+    public void takeBookFromLibrary(Library library) {
         Book book = library.removeBook();
         this.collection.add(book);
     }

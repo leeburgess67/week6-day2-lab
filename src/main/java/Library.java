@@ -1,16 +1,16 @@
 import java.util.ArrayList;
 
 public class Library {
-        private ArrayList<Book> books;
-        private Integer capacity;
+    private ArrayList<Book> books;
+    private Integer capacity;
 
 
-    public Library(){
-            this.books = new ArrayList<>();
-            this.capacity = 5;
-        }
+    public Library() {
+        this.books = new ArrayList<>();
+        this.capacity = 5;
+    }
 
-    public int booksCount(){
+    public int booksCount() {
         return this.books.size();
     }
 
@@ -27,7 +27,7 @@ public class Library {
         return capacity;
     }
 
-    public Book removeBook(){
+    public Book removeBook() {
         return this.books.remove(0);
 
     }
